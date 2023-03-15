@@ -24,10 +24,16 @@
 
     <section>
         <div id="video">
-          
-          <video class='js-player' poster="thumbnail.jpg" playsinline controls>
-            <source src="video/video.mp4" type="video/mp4">
-          </video>          
+
+            <div id="twitch-embed"></div>
+            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+            <script type="text/javascript">
+              new Twitch.Player("twitch-embed", {
+                channel: "donjulio7mx",
+                height: "320",
+                width: "100%",
+              });
+            </script>
     
         </div>
 
