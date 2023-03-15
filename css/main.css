@@ -9,6 +9,11 @@ body {
     margin-top: 20px;
 }
 
+:root {
+    --plyr-color-main:#ff0000;
+    --plyr-control-radius: 10px;
+  }
+
 #sectiont {
     width: 30%;
     background-color: #ffffffb2;

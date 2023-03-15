@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRACIAS POR TODO</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js" defer></script>
+
+</head>
+<body>
+
+    <section id="sectiont">
+        <div>
+            <h3 id="titulo3">SERENATA VIRTUAL</h3>
+            <h1 id="titulo1">CON MUCHO AMOR PARA TI <h1 id="iconc">&#x2764;</h1></h1>
+        </div>
+    </section>
+
+    <section>
+        <div id="video">
+
+            <div id="twitch-embed"></div>
+            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+            <script type="text/javascript">
+              new Twitch.Player("twitch-embed", {
+                channel: "donjulio7mx",
+                height: "320",
+                width: "100%",
+              });
+            </script>
+    
+        </div>
+
+    </section>
+
+    <section id="sectiont">
+        <div>
+            <h1 id="titulo2"><a>&#x2764;</a> FELIZ DE ESTAR UN MES CONTIGO <a>&#x2764;</a></h1>
+            <h4 id="titulo">de Edu para Sindy &#127801;&#10024;</h4>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+          const players = Array.from(document.querySelectorAll('.js-player')).map((p) => new Plyr(p,{
+            youtube: { noCookie: true },
+            i18n: {
+              quality: 'Calidad',
+              speed: 'Velocidad',
+              captions: 'Subtítulos',
+              disabled: 'Desactivar',
+              enabled: 'Activar',
+            },
+          }));
+        });
+    </script>
+        
+</body>
+</html>
