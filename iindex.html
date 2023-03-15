@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GRACIAS POR TODO</title>
 
+    <link rel="icon" href="images/carta.png" type="image/x-icon">
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
     <script src="https://cdn.plyr.io/3.7.2/plyr.js" defer></script>
@@ -22,16 +24,10 @@
 
     <section>
         <div id="video">
-
-            <div id="twitch-embed"></div>
-            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-            <script type="text/javascript">
-              new Twitch.Player("twitch-embed", {
-                channel: "donjulio7mx",
-                height: "320",
-                width: "100%",
-              });
-            </script>
+          
+          <video class='js-player' poster="thumbnail.jpg" playsinline controls>
+            <source src="video/video.mp4" type="video/mp4">
+          </video>          
     
         </div>
 
